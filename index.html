@@ -2,6 +2,17 @@
 <html>
 <head>
   <title>Hello Page</title>
+  <style>
+    .red-button {
+      background-color: red;
+      color: white;
+      font-size: 40px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <h1>Hello my pikkewyntjie</h1>
@@ -9,7 +20,9 @@
   <p>My eerste live website wat ek actually op 'n URL het.</p>
   <button onclick="outputMessage()">Click me to celebrate!</button>
   <br/>
-  <button onclick="loopMessages()">Click op my!</button>
+  <br/>
+  <br/>
+  <button onclick="loopMessages()" class="red-button">Click op my!</button>
 
   <script>
     function outputMessage() {
@@ -23,7 +36,7 @@
         if (index < messages.length) {
           alert(messages[index]);
           index++;
-          setTimeout(displayMessage, 3000); // Wait for 2 seconds
+          setTimeout(displayMessage, 1000); // Wait for 2 seconds
         }
       }
 
